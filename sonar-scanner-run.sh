@@ -16,6 +16,16 @@ if [ ! -z "$SONAR_PROJECT_VERSION" ]; then
   COMMAND="$COMMAND -Dsonar.projectVersion=$SONAR_PROJECT_VERSION"
 fi
 
+if [ ! -z "$SONAR_PROJECT_NAME" ]; then
+  COMMAND="$COMMAND -Dsonar.projectName=$SONAR_PROJECT_NAME"
+fi
+
+
+if [ ! -z "$SONAR_PROJECT_ID" ]; then
+  COMMAND="$COMMAND -Dsonar.projectId=$SONAR_PROJECT_ID"
+fi
+
+
 if [ ! -z "$SONAR_DEBUG" ]; then
   COMMAND="$COMMAND -X"
 fi
