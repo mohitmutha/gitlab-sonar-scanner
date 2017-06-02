@@ -22,12 +22,17 @@ fi
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if [ ! -z "$SONAR_PROJECT_ID" ]; then
   COMMAND="$COMMAND -Dsonar.projectId=$SONAR_PROJECT_ID"
 =======
 if [ ! -z "$SONAR_PROJECT_KEY" ]; then
   COMMAND="$COMMAND -Dsonar.projectKey=$SONAR_PROJECT_KEY"
 >>>>>>> Update sonar-scanner-run.sh
+=======
+if [ ! -z "$SONAR_PROJECT_KEY" ]; then
+  COMMAND="$COMMAND -Dsonar.projectKey=$SONAR_PROJECT_KEY"
+>>>>>>> master
 fi
 
 
