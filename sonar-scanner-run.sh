@@ -22,7 +22,8 @@ fi
 
 if [ ! -z "$SONAR_PROJECT_ID" ]; then
   COMMAND="$COMMAND -Dsonar.projectId=$SONAR_PROJECT_ID"
-
+fi
+  
 if [ ! -z "$SONAR_PROJECT_KEY" ]; then
   COMMAND="$COMMAND -Dsonar.projectKey=$SONAR_PROJECT_KEY"
 fi
@@ -52,7 +53,7 @@ if [ ! -z "$SONAR_ENCODING" ]; then
   COMMAND="$COMMAND -Dsonar.sourceEncoding=$SONAR_ENCODING"
 fi
 
-if [ !- "$SONAR_JS_REPORT_PATHS" ]; then
+if [ ! -z "$SONAR_JS_REPORT_PATHS" ]; then
   COMMAND="$COMMAND -Dsonar.javascript.lcov.reportPaths=$SONAR_JS_REPORT_PATHS"
 fi
 
